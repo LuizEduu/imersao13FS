@@ -81,7 +81,6 @@ func TestBuyPartialAsset(t *testing.T) {
 
 	wg.Wait()
 
-	// assert := assert.New(t)
 	assert.Equal("CLOSED", order.Status, "Order 1 should be closed")
 	assert.Equal(0, order.PendingShares, "Order 1 should have 0 PendingShares")
 
